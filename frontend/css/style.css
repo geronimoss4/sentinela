@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Cinzel", serif;
+    min-height: 100vh;
+    color: white;
+
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.75),
+        rgba(0, 0, 0, 0.85)),
+        url("https://images.unsplash.com/photo-1516321318423-f06f85e504b3");
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+    animation: fundo 20s infinite alternate;
+}
+
+@keyframes fundo {
+    from {
+        background-size: 100%;
+    }
+
+    to {
+        background-size: 110%;
+    }
+}
+
+.container {
+    width: 90%;
+    max-width: 900px;
+
+    margin: 40px auto;
+    padding: 35px;
+
+    text-align: center;
+
+    background: rgba(0, 0, 0, 0.45);
+
+    backdrop-filter: blur(12px);
+
+    border: 1px solid rgba(255, 255, 255, 0.15);
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 0 25px rgba(0, 0, 0, 0.6);
+
+    animation: aparecer 0.8s ease;
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h2 {
+    font-size: 32px;
+
+    margin-bottom: 25px;
+
+    letter-spacing: 3px;
+
+    text-transform: uppercase;
+
+    animation: brilho 3s infinite alternate;
+}
+
+@keyframes brilho {
+    from {
+        text-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
+    }
+
+    to {
+        text-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+    }
+}
+
+input,
+select,
+textarea,
+button {
+    width: 100%;
+
+    margin-top: 12px;
+
+    padding: 14px;
+
+    border-radius: 12px;
+
+    border: 1px solid rgba(255, 255, 255, 0.2);
+
+    font-size: 16px;
+
+    background: rgba(255, 255, 255, 0.1);
+
+    color: white;
+
+    transition: 0.3s;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+
+    transform: scale(1.02);
+
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+}
+
+button {
+    cursor: pointer;
+
+    font-weight: bold;
+
+    text-transform: uppercase;
+
+    letter-spacing: 2px;
+}
+
+button:hover {
+    transform: translateY(-3px);
+
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+.card {
+    margin: 15px 0;
+
+    padding: 20px;
+
+    border-radius: 15px;
+
+    background: rgba(255, 255, 255, 0.08);
+
+    backdrop-filter: blur(10px);
+
+    animation: aparecer 0.5s ease;
+}
+
+.verde,
+.amarelo,
+.vermelho {
+    display: inline-block;
+
+    padding: 8px 15px;
+
+    border-radius: 8px;
+
+    margin-top: 10px;
+}
+
+.verde {
+    background: rgba(0, 255, 120, 0.4);
+}
+
+.amarelo {
+    background: rgba(255, 210, 0, 0.4);
+}
+
+.vermelho {
+    background: rgba(255, 70, 70, 0.5);
+}
