@@ -69,7 +69,7 @@ app.post("/atendimento", (req, res) => {
 });
 
 // LISTAR PACIENTES (triagem busca quem foi cadastrado no atendimento)
-app.get("/pacientes", (req, res) => {
+app.get("/pacientes", (req, res) => { 
   const db = readDB();
   res.json(db.pacientes);
 });
