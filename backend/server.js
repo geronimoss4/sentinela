@@ -18,7 +18,7 @@ function readDB() {
       usuarios: [],
       pacientes: [],
       triagens: [],
-      consultas: [],
+      consultas: [], 
       tv_chamada: null,
       tv_historico: []
     };
