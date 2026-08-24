@@ -190,5 +190,5 @@ app.get("/medicacoes", (req, res) => {
 const PORT = process.env.PORT
         || 3000;
 APP.LISTEN(PORT, () => {
-  cosole.log(`porta ${PORT}`);
+  console.log(`porta ${PORT}`);
 });
